@@ -18,3 +18,22 @@ document.addEventListener('DOMContentLoaded', function () {
     contactForm.reset();
   });
 });
+
+// Product Filtering
+const filterButtons = document.querySelectorAll('.filter-btn');
+const products = document.querySelectorAll('.product');
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const filter = button.getAttribute('data-filter');
+
+    products.forEach(product => {
+      const category = product.getAttribute('data-category');
+      if (filter === 'all' || filter === category) {
+        product.style.display = 'block';
+      } else {
+        product.style.display = 'none';
+      }
+    });
+  });
+});
