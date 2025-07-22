@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>OLYLUX | Fashion Redefined</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
+
   <!-- Header -->
   <header>
     <div class="logo">
-      <img src="images/logo.jpeg" alt="OLYLUX Logo"  />
+      <img src="images/logo.jpeg" alt="OLYLUX Logo">
     </div>
     <nav>
       <ul>
@@ -25,80 +26,57 @@
 
   <!-- Hero Section -->
   <section id="hero">
-    <h1>Step Into Style with OLYLUX</h1>
-    <p>Premium fashion for bold personalities.</p>
+    <h1>Unleash Your Style</h1>
+    <p>Bold. Modern. OLYLUX.</p>
     <a href="#products" class="btn">Shop Now</a>
   </section>
 
   <!-- Products Section -->
-<section id="products">
-  <h2>Shop by Category</h2>
-
-  <!-- Filter Buttons -->
-  <div class="filters">
-    <button class="filter-btn" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="tees">Tees</button>
-    <button class="filter-btn" data-filter="hoodies">Hoodies</button>
-    <button class="filter-btn" data-filter="caps">Caps</button>
-  </div>
-
-  <!-- Product Grid -->
-  <div class="product-grid">
-    <div class="product" data-category="tees">
-      <img src="tshirt1.jpg" alt="OLYLUX Tee">
-      <h3>Logo Tee</h3>
-      <p>₦8,000</p>
-      <button>Add to Cart</button>
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/product1.jpg" alt="Product 1">
+        <h3>Luxury Tee</h3>
+        <p>₦8,000</p>
+        <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Luxury%20Tee" class="cart-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/product2.jpg" alt="Product 2">
+        <h3>OLYLUX Hoodie</h3>
+        <p>₦15,000</p>
+        <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20OLYLUX%20Hoodie" class="cart-btn">Order via WhatsApp</a>
+      </div>
     </div>
-
-    <div class="product" data-category="hoodies">
-      <img src="https://via.placeholder.com/200" alt="Black Hoodie">
-      <h3>Black Hoodie</h3>
-      <p>₦15,000</p>
-      <button>Add to Cart</button>
-    </div>
-
-    <div class="product" data-category="caps">
-      <img src="https://via.placeholder.com/200" alt="Street Cap">
-      <h3>Street Cap</h3>
-      <p>₦5,500</p>
-      <button>Add to Cart</button>
-    </div>
-
-    <!-- You can add more products here using the same structure -->
-  </div>
-</section>
+  </section>
 
   <!-- About Section -->
   <section id="about">
     <h2>About OLYLUX</h2>
-    <p>OLYLUX is more than a fashion label — it's a statement of confidence. We design premium pieces with cultural boldness and streetwear edge.</p>
+    <p>OLYLUX is a Nigerian streetwear fashion brand with a mission to redefine boldness and cultural pride. Every piece is a statement.</p>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
+    <h2>Get in Touch</h2>
+    <form id="contact-form">
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
       <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+      <button type="submit">Send</button>
     </form>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 OLYLUX. All rights reserved.</p>
-    <div class="social-icons">
+    <div class="socials">
       <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
       <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/2349066491199" class="whatsapp-float" target="_blank">
-  <i class="fab fa-whatsapp"></i>
-</a>
 </html>
