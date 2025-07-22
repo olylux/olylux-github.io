@@ -1,13 +1,20 @@
-// OLYLUX Website Script
+// Simple Cart Simulation
 
 document.addEventListener('DOMContentLoaded', function () {
-  // This runs when the page is fully loaded
+  const cartButtons = document.querySelectorAll('.product button');
 
-  const buttons = document.querySelectorAll('button');
-
-  buttons.forEach(button => {
+  cartButtons.forEach(button => {
     button.addEventListener('click', function () {
-      alert('This feature is coming soon! Stay tuned with OLYLUX.');
+      const productName = this.parentElement.querySelector('h3').textContent;
+      alert(`✅ "${productName}" added to cart! (Coming soon)`);
     });
+  });
+
+  // Contact form message
+  const contactForm = document.querySelector('form');
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('📩 Message sent! We will get back to you shortly.');
+    contactForm.reset();
   });
 });
