@@ -10,3 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+// Show or hide menu when icon is clicked
+document.getElementById('menuToggle').addEventListener('click', function () {
+  const navList = document.querySelector('nav ul');
+  navList.classList.toggle('show');
+});
